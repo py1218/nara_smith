@@ -1,12 +1,6 @@
-services:
-  - type: web
-    name: narasmithify
-    env: python
-    plan: gpu
-    region: oregon
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
-    branch: main
-    autoDeploy: true
-    healthCheckPath: /
+Flask
+TTS
+torch
+torchaudio
+transformers
+gradio
